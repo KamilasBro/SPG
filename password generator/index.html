@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Simple Password Generator">
+    <meta name="keywords" content="Password, Password Generator, generator, SPG">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Password Generator</title>
+</head>
+<body>
+    <main>
+        <div class="mainTile">
+            <h1 class="passGen">Simple Password Generator</h1>
+            <div class="reqWrapper">
+                <h1 class="req">Requirements</h1>
+                <button id="reqButton">Hide</button>
+            </div>
+            <div id="showHide">
+                <section>
+                    <h2>Lenght</h2>
+                    <input type="number" min="8" max="30" id="inputTile">
+                    <p>min. 8, max. 30</p>
+                </section>
+                <section>
+                    <h2>Special Symbols</h2>
+                    <button id="sect2N">No</button>
+                    <button id="sect2Y">Yes</button>
+                </section>
+                <section class="lastSection">
+                    <h2>Uppercase Letters</h2>
+                    <button id="sect3N">No</button>
+                    <button id="sect3Y">Yes</button>
+                </section>
+            </div>
+            <div class="genButtonWrapper">
+            <a href="#passTile"><button id="generate">Generate!</button></a>
+            </div>
+            <div id="passTile">
+                <h1 class="urPass">Your Password:</h1>
+                <p class="generatedPass" id="generatedPass"></p>
+                <div class="genButtonWrapper">
+                    <button id="copyButton">Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="loader-wrapper">
+        <span class="loader"></span>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -94,7 +94,6 @@ function generatePass()
     password=[passlenght];
     var symbPosition=Math.floor(Math.random() * passlenght);
     var upLetPosition=Math.floor(Math.random() * passlenght);
-    console.log(symbPosition,upLetPosition);
     while(upLetPosition==symbPosition)
     {
         upLetPosition=Math.floor(Math.random() * passlenght);

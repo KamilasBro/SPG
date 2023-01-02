@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 body{
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0px;
     background: rgb(243, 241, 241);
     font-family: 'Oswald', sans-serif;
     font-weight: none;
@@ -47,12 +46,7 @@ section button{
 .lastSection{
     border-bottom: 2px solid #DFE1E6;
 }
-#sect2N{
-    background-color: rgb(245, 245, 245);
-    color: red;
-    border-right: none;
-}
-#sect3N{
+#sect2N,#sect3N{
     background-color: rgb(245, 245, 245);
     color: red;
     border-right: none;
@@ -152,41 +146,152 @@ input{
     width: 50px;
     height: 50px;
     position: relative;
-    border-radius: 5%;
+    border-radius: 3px;
     background: rgb(14, 14, 14);
-    animation: loader 1s infinite ease-in-out alternate;
+    animation: loader 1.2s;
 }
 @keyframes loader{
-    0% { transform: rotate(90deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(270deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(0deg);}
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(90deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(270deg);}
+    100% { transform: rotate(360deg);}
+}
+@media(max-width:1440px){
+    .mainTile{
+        width: 795px;
+    }
+    .passGen{
+        font-size: 38px;
+    }
+    .req{
+        font-size: 34px;
+    }
+    #reqButton{
+        height: 40px;
+        width: 60px;
+        font-size: 20px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    input{
+        height: 45px;
+        width: 45px;
+        font-size: 28px;
+    }
+    #sect2N,#sect2Y,#sect3N,#sect3Y{
+        height: 42px;
+        width: 42px;
+        font-size: 17px;
+    }
+    #generate{
+        font-size: 34px;
+    }
+    .urPass{
+        font-size: 38px;
+    }
+    .generatedPass{
+        font-size: 42px;
+    }
+    #copyButton{
+        font-size: 28px;
+    }
 }
 @media (max-width: 768px){
     .generatedPass{
         font-size: 38px;
     }
     .mainTile{
-        width: 100%;
+        width: 100vw;
+        border: none;
+        margin: 0px;
     }
 }
 @media (max-width: 560px){
-    .generatedPass{
+    .passGen{
+        font-size: 32px;
+    }
+    .req{
         font-size: 28px;
+    }
+    #reqButton{
+        height: 35px;
+        width: 50px;
+        font-size: 16px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    input{
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+    }
+    #sect2N,#sect2Y,#sect3N,#sect3Y{
+        height: 38px;
+        width: 38px;
+        font-size: 14px;
+    }
+    #generate{
+        font-size: 28px;
+        margin: 25px;
+    }
+    .urPass{
+        font-size: 32px;
+    }
+    .generatedPass{
+        font-size: 30px;
+    }
+    #copyButton{
+        font-size: 24px;
     }
 }
 @media (max-width: 425px){
-    .req{
-        padding-left: 0%;
+    .passGen{
+        font-size: 28px;
     }
-    section{
-        padding-left: 0%;
+    .req{
+        font-size: 24px;
+    }
+    #reqButton{
+        height: 35px;
+        width: 45px;
+        font-size: 14px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    input{
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+    }
+    #sect2N,#sect2Y,#sect3N,#sect3Y{
+        height: 34px;
+        width: 34px;
+        font-size: 12px;
+    }
+    #generate{
+        font-size: 24px;
     }
     .urPass{
-        font-size: 35px;
+        font-size: 28px;
     }
     .generatedPass{
-        font-size: 21px;
+        font-size: 22px;
+        border-top: 2px solid #DFE1E6;
+        text-align: center;
+    }
+    #copyButton{
+        font-size: 20px;
+    }
+}
+@media (max-width: 375px){
+    .passGen, .urPass{
+        font-size: 26px;
+    }
+    .generatedPass{
+        font-size: 20px;
     }
 }
